@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Realtime Tracking</title>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/virus.png">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Bungee+Shade&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>COVID-19 Realtime Tracking</h1>
+        <!-- <img src="assets/images/virus.png" width="104" height="94" > -->
+    </header>
+
+    <div class="wrapper">
+
+        <div class="statistics">
+            <div class="totalCaseBox">
+                <h2>
+                    <i class="fa fa-address-book-o" aria-hidden="true"> Total Cases</i>
+                </h2>
+                <p style="font: 3rem;" id="total_cases">Test</p>
+            </div>
+
+            <div class="boxWrapper">
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-user-times" aria-hidden="true"> Total Deaths</i>
+                    </h2>
+                    <p style="font: 1.5 rem;" id="total_deaths">Test</p>
+                </div>
+
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-refresh" aria-hidden="true"> Total Recovered</i>
+                    </h2>
+                    <p style="font: 1.5 rem;" id="total_recovered">Test</p>
+                </div>
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-plus-circle" aria-hidden="true"> New Cases</i>
+                    </h2>
+                    <p style="font: 1.5 rem;" id="new_cases">Test</p>
+                </div>
+                <div class="box">
+                    <h2>
+                        <i class="fa fa-user-circle-o" aria-hidden="true"> New Deaths</i>
+                    </h2>
+                    <p style="font: 1.5 rem;" id="new_deaths">Test</p>
+                </div>
+            </div>
+        </div>
+
+        <table class="countries" id="countries">
+            <tr>
+                <th>Country</th>
+                <th>Cases</th>
+                <th>Deaths</th>
+                <th>Serious or Critical</th>
+                <th>Total recovered</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
