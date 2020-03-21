@@ -14,16 +14,21 @@ header {
     text-align: center;
     padding: 25px;
     margin: 5px;
-    background-color: rgb(31, 150, 247);
+    background-color:rgb(104, 99, 75);
+}
+
+p {
+    font-size: 22px;
 }
 
 i {
-    color: rgb(5, 44, 70);
+    color:  rgb(2, 21, 73);
 }
 
 .wrapper {
     width: 1040px;
     margin: 0 auto;
+
 }
 
 .statistics {
@@ -36,7 +41,7 @@ i {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(31, 221, 235);
+    background-color: burlywood ;
 }
 
 .boxWrapper {
@@ -46,11 +51,11 @@ i {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     border-radius: 10px;
-    background:  rgb(31, 221, 235);
+    background-color: burlywood;
 }
 
 .box {
-    border-right: 3px solid grey;
+    border-right: 3px solid rgb(2, 21, 73);
 }
 
 .box:last-child {
@@ -58,14 +63,31 @@ i {
 }
 
 .countries {
-    margin-top: 1rem ;
-    padding: 1rem;
+    margin-top: 0.5rem ;
+    padding: 0.5rem;
     width: 100%;
     text-align: center;
     border-radius: 10px;
-    background:  rgb(31, 221, 235);
 }
 
-tbody {
-    border-right: 3px solid grey;
+tr:first-child {
+    text-transform: uppercase;
 }
+
+tr:nth-child(even) {
+    color: rgb(2, 21, 73);
+}
+
+tr:nth-child(odd) {
+    background-color:  rgb(104, 99, 75);
+    color: #fafafa;
+}
+
+tr td {
+    padding: 15px;
+}
+
+th {
+    padding: 15px;  
+}
+
