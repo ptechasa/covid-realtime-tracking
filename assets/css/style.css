@@ -65,3 +65,7 @@ i {
     border-radius: 10px;
     background:  rgb(31, 221, 235);
 }
+
+tbody {
+    border-right: 3px solid grey;
+}
