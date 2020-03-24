@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -19,6 +19,7 @@ header {
 
 p {
     font-size: 22px;
+    color:  rgb(175, 48, 9);
 }
 
 i {
@@ -28,7 +29,6 @@ i {
 .wrapper {
     width: 1040px;
     margin: 0 auto;
-
 }
 
 .statistics {
@@ -41,7 +41,7 @@ i {
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
-    background-color: burlywood ;
+    background-color: rgb(247, 197, 60);
 }
 
 .boxWrapper {
@@ -51,7 +51,7 @@ i {
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color: rgb(247, 197, 60);
 }
 
 .box {
@@ -68,6 +68,18 @@ i {
     width: 100%;
     text-align: center;
     border-radius: 10px;
+}
+
+#myInput {
+    /* background-image: url('/css/searchicon.png'); */
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 35%;
+    font-size: 14px;
+    padding: 12px 20px 12px 30px;
+    border: 2px solid #ddd;
+    margin-top: 15px;
+    float:right;
 }
 
 tr:first-child {
@@ -89,5 +101,5 @@ tr td {
 
 th {
     padding: 15px;  
+    color: #fafafa;
 }
-
