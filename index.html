@@ -59,7 +59,13 @@
             </div>
         </div>
 
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Country name" title="Type in a name">
+        <div class="search-container">
+            <form class="search" action="">
+                <input type="text" id="myInput" placeholder="Country name"
+                    title="Type in a name">
+                <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
 
         <table class="countries" id="countries">
             <tr>

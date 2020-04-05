@@ -6,17 +6,14 @@ var new_deaths = document.getElementById('new_deaths');
 var active_cases = document.getElementById('active_cases')
 var table = document.getElementById('countries');
 
-// var apihost = config.HOST;
-// var mykey = config.MY_KEY;
-
 
 //Fetching all data around the world
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
-    "method": "GET",
-    "headers": {
-        "x-rapidapi-host": "acoronavirus-monitor.p.rapidapi.com",
-        "x-rapidapi-key": "ff1d322e9fmshb3928cff6a575fcp18159cjsn1dab709b4a8d"
-    }
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+		"x-rapidapi-key": "ff1d322e9fmshb3928cff6a575fcp18159cjsn1dab709b4a8d"
+	}
 })
     .then(response => response.json().then(data => {
         console.log(data);
@@ -31,13 +28,14 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
         console.log(err);
     });
 
+
 //Fetching data by country
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php", {
-    "method": "GET",
-    "headers": {
-        "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-        "x-rapidapi-key": "ff1d322e9fmshb3928cff6a575fcp18159cjsn1dab709b4a8d"
-    }
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
+		"x-rapidapi-key": "ff1d322e9fmshb3928cff6a575fcp18159cjsn1dab709b4a8d"
+	}
 })
     .then(response => response.json().then(data => {
         console.log(data);
@@ -65,4 +63,3 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.p
     .catch(err => {
         console.log(err);
     });
-
